@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+
+
+
+
+
+<!-- level     1 -->
+   <!-- <div id="box">HELLO GUYS HOW ARE YOU!</div> -->
+   <!-- <h1 class="headings">HELLO</h1> -->
+   <!-- <h2 class="headings">GUYS</h2> -->
+   <!-- <h3 class="headings">HOW ARE YOU!</h3> -->
+   <!-- <button>Click</button> -->
+    <!-- <header></header> -->
+     <!-- <h1>heading</h1> -->
+     <!-- <div id="outer">Hello how are you -->
+        <!-- <div id="inner"> I am good</div> -->
+     <!-- </div> -->
+<!-- <header> -->
+   <!-- <img src="2.webp"> -->
+<!-- </header> -->
+ <!-- <div id="rectangle"> -->
+   <!-- <div id="circles1"></div> -->
+   <!-- <div id="circles2"></div> -->
+   <!-- <div id="circles3"></div> -->
+ <!-- </div> -->
+
+
+
+
+
+
+<!-- level    2 -->
+  <!-- <header> -->
+   <!-- <a id="logo"  href="#">amazon.in</a> -->
+   <!-- <a href="#">Account</a> -->
+   <!-- <a href="#">My Cart</a> -->
+   <!-- <a href="#">Contact Us</a> -->
+   
+      <!-- <input placeholder="Search Amazon.in"> -->
+      <!-- <button>Search</button> -->
+   
+  <!-- </header> -->
+  <!-- <div id="content"> -->
+  <!-- <div class="contentBox">Hello guys how are you!</div> -->
+  <!-- <div class="contentBox">Hello guys how are you!</div> -->
+  <!-- <div class="contentBox">Hello guys how are you!</div> -->
+<!-- </div> -->
+<!-- <footer> -->
+   <!-- thank you guys! -->
+<!-- </footer> -->
+<!-- <header> -->
+   
+<!-- </header> -->
+<header>
+   <div id="left">Portfolio</div>
+
+   <div id="right">
+      <ul>
+         <li><a href="#first-section">Home</a></li>
+         <li><a href="#second-section">Services</a></li>
+         <li><a href="#about-section">About</a></li>
+         <li><a href="#">Projects</a></li>
+         <li><a href="#contact-section">Contact Me</a></li>
+         
+      </ul>
+   </div>
+   
+</header>
+<section id="first-section">
+<div id="left-section">
+Hi, My name is <span id="purple">Deep</span>
+<div>and I am a passionate</div>
+
+<span id="element"></span>
+<div id="resume"><a href="#" download>Download Resume</a></div>
+</div>
+
+
+<div id="right-section">
+<img src="png4.png">
+</div>
+</section>
+
+
+
+
+
+
+
+<section id="second-section">
+   <div id="top-section">
+      <h1>Services</h1>
+   
+   </div>
+
+
+
+   <div id="middle-section">
+      These are the services provided by me.Please connect if you are interested.
+      <div>Thank you!</div>
+   </div>
+
+
+   <div id="bottom-section">
+
+
+      <div class="content-box">
+         <img src="htmlpng.png">
+         <div class="textc">HTML SERVICES</div>
+      </div>
+
+
+      <div class="content-box">
+         <img src="css.png">
+         <div class="textc">CSS SERVICES</div>
+      </div>
+
+
+
+      <div class="content-box">
+         <img src="java2.png">
+         <div class="textc">JAVA SCRIPT SERVICES</div>
+      </div>
+
+   </div>
+
+
+
+
+</section>
+
+
+
+
+<section id="about-section">
+   <div  id="left-part">
+      <img src="adobe.png">
+   </div>
+   <div id="right-part">
+      <h1 id="h1-about">About Me</h1>
+      <div>Myself Deepanshu Singh i am a passionate web developer and tech enthusiast.</div>
+      <div>i provide services like frontend developer, database designing</div>
+      <div id="tab-titles">
+         <div class="tab-links active-link" onclick="opentab(event,'skills')" >Skills</div>
+         <div class="tab-links" onclick="opentab(event,'experience')">Experience</div>
+      </div>
+      <div class="tab-contents active-tab" id="skills">
+         <ul>
+            <li><span>UI&UX</span><br>Designing Web Interface</li>
+            <li><span>Web development</span><br>Web App Development</li>
+         </ul>
+      </div>
+      <div class="tab-contents" id="experience">
+         <ul>
+            <li><span>Internship at XYZ</span><br>Worked on front-end technologies</li>
+            <li><span>Freelance Projects</span><br>Developed responsive websites</li>
+         </ul>
+      </div>
+      <script>
+         function opentab(event, tabName) {
+    // Select all tab links and tab content elements
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
+
+    // Remove active classes from all tabs and contents
+    for (let tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+    for (let tabcontent of tabContents) {
+        tabcontent.classList.remove("active-tab");
+    }
+
+    // Add active classes to the clicked tab and corresponding content
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabName).classList.add("active-tab");
+}
+         </script>
+   
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section id="contact-section">
+   <h1>Contact Me</h1>
+   <p>Feel free to reach out for collaborations or just a friendly hello! 👋</p>
+ 
+   <div class="contact-container">
+     <form action="#" method="POST" class="contact-form">
+       <input type="text" name="name" placeholder="Your Name" required>
+       <input type="email" name="email" placeholder="Your Email" required>
+       <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+       <button type="submit">Send Message ✉️</button>
+     </form>
+ 
+     <div class="contact-info">
+       <h3>Get in Touch</h3>
+       <p>📍 Lucknow, India</p>
+       <p>📞 +91 7348xxxxxx</p>
+       <p>✉️ deep@gmail.com</p>
+       <div class="social-icons">
+         <a href="#"><img src="linkedin-240.png" alt="LinkedIn"></a>
+         <a href="#"><img src="github-240.png" alt="GitHub"></a>
+         <a href="#"><img src="instagram-96.png" alt="Instagram"></a>
+       </div>
+     </div>
+   </div>
+ </section>
+
+
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<!-- Setup and start animation! -->
+<script>
+   var typed = new Typed('#element', {
+     strings: ['Web developer', 'Hustler'],
+     typeSpeed: 50,
+   });
+ </script>
+</body>
+</html>
